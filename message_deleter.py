@@ -11,12 +11,8 @@ async def on_ready():
     day = datetime.now() - client.user.created_at
     print(f"{Fore.GREEN}Logged in\nUser : {client.user}\nID : {client.user.id}\nCreation Date : {client.user.created_at} ({day.days})\nBadges : ")
     for badg in client.user.public_flags.all():
-        if client.user.public_flags.all() == [ ]:
-            print("Empty")
-        else:
-            print(badg)
+        print(badg)
     await client.change_presence(status=Status.invisible)
-    
 @client.command()
 async def clear(ctx, limit=100):
     await ctx.message.delete()
