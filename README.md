@@ -2,6 +2,7 @@
 # Discord Self Message Deleter
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Python Version](https://img.shields.io/pypi/pyversions/discord.py-self)
+
 This Is A Simple Resource To Delete Your Messages In A Dm Or Server Text Channel.
 
 
@@ -53,7 +54,7 @@ python message_deleter.py
 Install my-project with pip
 
 ```bash
-  pip install discord.py-self
+  pip install discord.py-self colorama
 ```
     
 ## Usage
